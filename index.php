@@ -1,0 +1,23 @@
+<?php
+include('controlers/controler.php');
+if(isset($_GET['action']))
+{
+    if($_GET['action']=="connexion"){
+        authentification();
+    }
+    if($_GET['action']=="enregistrement"){
+        enregistrement();
+    }
+    if($_GET['action']=="connexions"){
+        connexions();
+    }
+    if($_GET['action']=="ajouter"){
+        ajouter();
+    }
+    if($_GET['action']=="déconnexion"){
+        quitter();
+    }
+}
+else{
+    accueil();
+}
